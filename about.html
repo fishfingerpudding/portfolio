@@ -7,12 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kirang+Haerang">
     <style>
-        #about {
+        .about {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 40px;
             gap: 20px;
+        }
+        .skillist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            column-gap: 40px;
+            margin-bottom: 40px;
+        }
+        .skills {
+            width:200px;
+            display: flex;
+            flex-direction: column;
+            background-color:#ADAC85;
+            padding: 30px;
+            border-top-style:solid;
+            border-left-style:solid;
+            border-color: #FAC6C6;
+            border-width: 5px;
+        }
+        .skills:hover {
+            border-color: #FF7F3F;
+            width:205px;
         }
         #mugshot {
             background-color: #ADAC85;
@@ -20,6 +43,39 @@
         }
         #bio {
             max-width: 400px;
+        }
+        h2 {
+            background-color:#ADAC85;
+            margin-top:60px;
+            padding: 20px;
+        }
+        #experiencelist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            column-gap: 40px;
+            margin-bottom: 40px;
+        }
+        .experience {
+            max-width: 400px;
+            padding: 5px;
+        }
+        .experiencetitle{
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            
+            border-bottom-style: solid;
+            border-color: #FAC6C6;
+            border-width: 5px;
+        }
+        .experience:hover {
+            border-style:solid;
+            border-color:#FF7F3F;
+            border-width:5px;
+            text-size-adjust:calc(+5px)
         }
     </style>
 </head>
@@ -35,13 +91,88 @@
             <li><a href="sketchbook.html">Sketchbook</a></li>
         </ul>
     </div>
-    <div id="about">
+
+<button onclick="topFunction()" id="totop" title="Go to top">Top</button>
+
+    <script>
+        let mybutton = document.getElementById("totop");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <div class="about">
         <div id="mugshot"></div>
         <div id="bio">
             <h1>About</h1>
             <p>Fox Ueng-McHale lorem ipsum Molestias molestias sed et sunt. Est rerum omnis explicabo at. Sunt dolores voluptatem modi. Explicabo omnis soluta dignissimos nemo. Qui voluptate laborum vel asperiores voluptas molestias quibusdam. Veniam deleniti et sunt ut.</p>
             <p>Et provident optio nobis laudantium temporibus mollitia neque reprehenderit. At doloribus aut animi libero magni quia et. Doloremque ratione ducimus corporis. Aperiam suscipit officia quia. Aliquid ducimus eum recusandae quia hic et facilis qui. Sunt quia laudantium et aliquam reprehenderit nulla.</p>
             <p>Ducimus vero alias reprehenderit. Suscipit assumenda et nemo consequatur minus. Quod dicta dolorem nobis id quia. Quam nemo temporibus fugit. Vitae consectetur blanditiis occaecati autem ab. Repellendus aut aperiam error ducimus neque ex.</p>
+        </div>
+    </div>
+    <h2>Skills</h2>
+
+    <div class="skillist">
+        <div class="skills">
+            <h3>2D</h3>
+            <al>
+                <li><b>Printmakking:</b> Relief (linoleum and woodcut), Intaglio, Lithography</li>
+                <li><b>Painting:</b> acrylic, gouache, watercolor, and oil</li>
+                <li>Traditional and digital sketch mediums</li>
+            </al>
+        </div>
+        <div class="skills">
+            <h3>3D</h3>
+            <al>
+                <li><b>Clay:</b> Oven-bake, air dry, kiln, and papier mache</li> 
+                <li>High-fidelity model making and painting 3D forms</li>
+                <li>Basic woodworking training</li>
+            </al>
+        </div>
+        <div class="skills">
+            <h3>Computer</h3>
+            <al>
+                <li>Mac and PC</li>
+                <li>Google Suite and Excel</li>
+                <li>Adobe Premier, Dragonframe, Procreate, and Fresco</li>
+                <li>Basic HTML and CSS</li>
+            </al>
+        </div>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div id="experiencelist">
+        <div class="experience">
+            <h3 class="experiencetitle">Internships</h3>
+            <p><b>Research Assistant under Dr. Damian Bebell Boston College | Summer 2024</b></p>
+            <p>Ran statistical analysis and presented findings for ongoing research project in K-12 technology usage for education. Comfortable with public speaking and presenting information and findings in a formal setting.</p>
+        </div>
+        <div class="experience">
+            <h3 class="experiencetitle">Work Experience</h3>
+            <p><b>Sourland Bread, Hopewell NJ | Assistant baker, Summer 2024</b></p>
+            <p>Mixing, shaping, and baking at commercial scale (100+ loaves weekly for restaurants and wholesale). Comfortable delegating and working within a team framework.</p>
+            <p><b>Tipple and Rose, Princeton NJ | Retail and Kitchen Assistant, 2022-2023</b></p>
+            <p>Independently assembled high tea trays, made tea and food, and worked the register in the apothecary store. Worked at catering events, assisting with setup and serving food. High-stress, fast-paced working environment requiring precision work and constant problem solving.</p>
+        </div>
+        <div class="experience">
+            <h3 class="experiencetitle">Volunteer Work</h3>
+            <p><b>Assistant Teacher for Afterschool Sewing Class, Princeton Arts Council, Winter 2024</b></p>
+            <p>Taught basic hand and machine sewing techniques to mixed 6th-8th grade. Provided instruction, class organization, and facilitated conflict resolution.</p>
+            <p><b>Transcriber for Dani Cole, Spring 2023</b></p>
+            <p>Transcribed Dani Cole's graduate thesis on autoimmune conditions and related connective tissue differences in Dance/Movement Therapy.</p>
         </div>
     </div>
 </body>

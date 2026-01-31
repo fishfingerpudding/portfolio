@@ -6,9 +6,28 @@
     <title>About  |  Fox Ueng-McHale</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kirang+Haerang">
+    <style>
+        #cover {
+            width:100vw;
+            background-color:#ADAC85;
+        }
+        #cover img {
+            max-width:100vw;
+            max-height:100vh;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            margin-top: 100px;
+            background-color: #ADAC85;
+            padding:20px;
+        }
+        
+    </style>
 </head>
 <body>
-    <div id="nav">
+    <div id="nav" style="border-bottom-color:transparent;">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -18,6 +37,64 @@
             <li><a href="painting.html">Painting</a></li>
             <li><a href="sketchbook.html">Sketchbook</a></li>
         </ul>
+    </div>
+
+    <div id="cover">
+        <img src="shrimp.jpg">
+    </div>
+
+    <button onclick="topFunction()" id="totop" title="Go to top">Top</button>
+
+    <script>
+        let mybutton = document.getElementById("totop");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div id="art">
+        <h2>Lithography</h2>
+        <div class="photoset-2">
+            <img src="Washed out 1.jpg">
+            <img src="Gas station sushi.jpg">
+        </div>
+        <div class="photoset-3">
+            <img src="Six degrees of separation 1.jpg">
+            <img src="Six degrees of separation 3.jpg">
+            <img src="Six degrees of separation 4.jpg">
+        </div>
+        <div class="photoset-2">
+            <img src="potato.1.JPG">
+            <img src="potato2.JPG">
+        </div>
+
+        <h2>Relief</h2>
+        <div class="photoset-1">
+            <img src="eel.jpg">
+        </div>
+        <h2>Cyanotype</h2>
+        <div class="photoset-2">
+            <img src="cyano-3.jpg">
+            <img src="cyano-2.jpg">
+        </div>
+        <div class="photoset-2">
+            <img src="cyano-5.jpg">
+            <img src="cyano-4.jpg">
+        </div>
+        <div class="photoset-1" style="margin-bottom:60px;">
+            <img src="cyano-1.jpg">
+        </div>
     </div>
 </body>
 </html>
