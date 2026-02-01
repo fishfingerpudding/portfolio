@@ -6,6 +6,27 @@
     <title>About  |  Fox Ueng-McHale</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kirang+Haerang">
+    <style>
+        #nightshift {
+            width:100vw;
+            height:100vh;
+            background-image:url(nightshift-door.png);
+            background-size:contain;
+            background-repeat: repeat-x;
+        }
+        #stopgap {
+            width:100vw;
+            height:100vh;
+            background-image:url(stopgap-gears.png);
+            background-size:contain;
+            background-repeat: repeat-x;
+        }
+        span {
+            font-size: 200px;
+            font-family:Kirang Haerang;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div id="nav">
@@ -20,7 +41,6 @@
         </ul>
     </div>
     <button onclick="topFunction()" id="totop" title="Go to top">Top</button>
-
     <script>
         let mybutton = document.getElementById("totop");
 
@@ -39,7 +59,31 @@
         }
     </script>
 
-
-
+    <div id="nightshift">
+        <span>Night Shift</span>
+    </div>
+    <div style="text-align: center;">
+        <h1>Night Shift</h1>
+        <div>VIDEO GOE HERE</div>
+    </div>
+    <div class="photoset-2">
+        <img src="nightshift-floor.png">
+        <img src="nightshift-table.png">
+    </div>
+    <div class="photoset-2" style="margin-bottom:140px;">
+        <img src="nightshift-looking.png">
+        <img src="nightshift-face.png">
+    </div>
+    <div id="stopgap">
+        <span>Stopgap</span>
+    </div>
+    <div style="text-align: center;">
+        <h1>Stopgap</h1>
+        <div>VIDEO GOE HERE</div>
+    </div>
+    <div class="photoset-2" style="margin-bottom:140px;">
+        <img src="stopgap-belts.png">
+        <img src="stopgap-door.png">
+    </div>
 </body>
 </html>

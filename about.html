@@ -59,7 +59,7 @@
         }
         .experience {
             max-width: 400px;
-            padding: 5px;
+            padding: 10px;
         }
         .experiencetitle{
             display: block;
@@ -72,10 +72,9 @@
             border-width: 5px;
         }
         .experience:hover {
-            border-style:solid;
-            border-color:#FF7F3F;
-            border-width:5px;
-            text-size-adjust:calc(+5px)
+            border-style: solid;
+            border-width: 5px;
+            border-color:#FF7F3F
         }
     </style>
 </head>
@@ -92,27 +91,7 @@
         </ul>
     </div>
 
-<button onclick="topFunction()" id="totop" title="Go to top">Top</button>
-
-    <script>
-        let mybutton = document.getElementById("totop");
-
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-        function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        }
-    </script>
-
-
+    
     <div class="about">
         <div id="mugshot"></div>
         <div id="bio">
