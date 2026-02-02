@@ -40,6 +40,18 @@
         #mugshot {
             background-color: #ADAC85;
             width: 400px;
+            border-style: solid;
+            border-width:5px;
+            border-color:#ADAC85;
+            border-left-color:#FAC6C6;
+            border-top-color:#FAC6C6;
+        }
+        #mugshot img {
+            width:400px;
+        }
+        #mugshot:hover {
+            border-left-color: #FF7F3F;
+            border-top-color: #FF7F3F;
         }
         #bio {
             max-width: 400px;
@@ -93,7 +105,9 @@
 
     
     <div class="about">
-        <div id="mugshot"></div>
+        <div id="mugshot">
+            <img src="foxphoto.jpeg">
+        </div>
         <div id="bio">
             <h1>About</h1>
             <p>Fox Ueng-McHale lorem ipsum Molestias molestias sed et sunt. Est rerum omnis explicabo at. Sunt dolores voluptatem modi. Explicabo omnis soluta dignissimos nemo. Qui voluptate laborum vel asperiores voluptas molestias quibusdam. Veniam deleniti et sunt ut.</p>
