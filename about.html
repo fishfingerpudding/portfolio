@@ -88,6 +88,7 @@
             border-width: 5px;
             border-color:#FF7F3F
         }
+        
     </style>
 </head>
 <body>
@@ -103,6 +104,24 @@
         </ul>
     </div>
 
+    <button onclick="topFunction()" id="totop" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("totop");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
     
     <div class="about">
         <div id="mugshot">
@@ -167,6 +186,13 @@
             <p><b>Transcriber for Dani Cole, Spring 2023</b></p>
             <p>Transcribed Dani Cole's graduate thesis on autoimmune conditions and related connective tissue differences in Dance/Movement Therapy.</p>
         </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li>Fox Ueng-McHale</li>
+            <li>Updated 2026</li>
+            <li>Portfolio</li>
+        </ul>
     </div>
 </body>
 </html>
