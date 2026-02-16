@@ -19,19 +19,41 @@
         #text {
             display: flex;
             flex-direction: column;
+            margin-left: 15px;
+            margin-right: 45px;
+            justify-content: space-between;
         }
         #open {
             display:flex;
             flex-wrap: nowrap;
-            justify-content:center;
+            justify-content:space-between;
             align-items: center;
+            width:100vw;
+            height: 46vw;
+        }
+        #fish img {
+            width: 50vw;
+            height: auto;
+            padding-left: 50px;
         }
         #fish {
-            background-color:grey;
+            border-right-style:solid;
+            border-color: #FAC6C6;
+            border-width: 5px;
+            padding: 15px;
         }
         #name {
             display:flex;
             flex-direction: column;
+        }
+        span {
+        color: #ADAC85;
+        }
+        #fox {
+            font-size:400px;
+        }
+        #fox:hover {
+            color: #FF7F3F;
         }
         #descript {
             display:flex;
@@ -44,6 +66,11 @@
             color: white;
             font-family: Kirang Haerang;
             font-size: 20px;
+            padding-right: 15vw;
+        }
+        #line-break {
+            margin-top: 0;
+            margin-right: 20%;
         }
     </style>
 </head>
@@ -63,17 +90,14 @@
 
 
     <div id="open">
+        <div id="fish">
+            <img src="frontfish.png">
+        </div>
         <div id="text">
             <div id=“name”>
-                <span style="font-family:Kirang Haerang; color:white; font-size:400px;">Fox</span>
-                <span style="font-family:Kirang Haerang; color:white; font-size:70px;">Ueng-McHale</span>
+                <span id="fox" style="font-family:Kirang Haerang;">Fox</span>
+                <span style="font-family:Kirang Haerang; font-size:70px;">Ueng-McHale</span>
             </div>
-                <div id="line-break"></div>
-            <div id="descript">
-                <div><p>animator</p></div>
-                <div><p>printmaker</p></div>
-                <div><p>aspiring historian</p></div>
-                </div>
         </div>
     </div>
     </div>
