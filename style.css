@@ -72,6 +72,53 @@ h3 {
 }
 
 
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-button {
+    font-size: 30px;
+    background-color: #525046;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Kirang Haerang;
+    border: none;
+}
+
+.dropdown-button-thispage {
+    font-size: 30px;
+    background-color: #FAC6C6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Kirang Haerang;
+    border: none;
+
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  font-size: 25px;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+  border-bottom-style: solid;
+  border-color: #ADAC85;
+  background-color: #525046;
+}
+
+
+
+
 @media (max-width:1000px) {
     ul {
         font-size: 20px;

@@ -9,59 +9,55 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kirang+Haerang">
     <style>
-        #cover {
+        #nightshift {
             width:100vw;
             height:100vh;
-            background-image:url(shrimp.jpg);
+            background-image:url(nightshift-door.png);
             background-size:contain;
             background-repeat: repeat-x;
         }
-        #cover img {
-            max-width:100vw;
-            max-height:100vh;
-            display:block;
-            margin-left: auto;
-            margin-right: auto;
+        #stopgap {
+            width:100vw;
+            height:100vh;
+            background-image:url(stopgap-gears.png);
+            background-size:contain;
+            background-repeat: repeat-x;
         }
         span {
             font-size: 200px;
             font-family:Kirang Haerang;
             color: white;
         }
-        h2 {
-            margin-top: 100px;
-            background-color: #ADAC85;
-            padding:20px;
+        .video iframe {
+            width: 900px;
+            height: 550px;
         }
-        
+        .video {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
-    <div id="nav" style="border-bottom-color:transparent;">
+    <div id="nav">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li>
                 <div class="dropdown">
-                    <button class="dropdown-button"><a href="stopmo.html">Animation &#9660</a></button>
+                    <button class="dropdown-button-thispage"><a href="stopmo.html">Animation &#9660</a></button>
                     <div class="dropdown-options">
                         <a href="stopmo.html">Stop Motion</a>
-                        <a href="cgi.html">CGI</a>
+                        <a class="thispage" href="cgi.html">CGI</a>
                     </div>
                 </div>
             </li>
-            <li class="thispage"><a href="printmaking.html">Printmaking</a></li>
+            <li><a href="printmaking.html">Printmaking</a></li>
             <li><a href="sculpture.html">Sculpture</a></li>
             <li><a href="sketchbook.html">Sketchbook</a></li>
         </ul>
     </div>
-
-    <div id="cover">
-        <span>Printmaking</span>
-    </div>
-
     <button onclick="topFunction()" id="totop" title="Go to top">Top</button>
-
     <script>
         let mybutton = document.getElementById("totop");
 
@@ -80,39 +76,23 @@
         }
     </script>
 
-    <div id="art">
-        <h2>Lithography</h2>
-        <div class="photoset-2">
-            <img src="Washed out 1.jpg">
-            <img src="Gas station sushi.jpg">
+    <div style="text-align: center;">
+        <h1>Self Portrait</h1>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/suu980IXkkk"></iframe>
         </div>
-        <div class="photoset-3">
-            <img src="Six degrees of separation 1.jpg">
-            <img src="Six degrees of separation 3.jpg">
-            <img src="Six degrees of separation 4.jpg">
-        </div>
-        <div class="photoset-2">
-            <img src="potato.1.JPG">
-            <img src="potato2.JPG">
-        </div>
-
-        <h2>Relief</h2>
-        <div class="photoset-1">
-            <img src="eel.jpg">
-        </div>
-        <h2>Cyanotype</h2>
-        <div class="photoset-2">
-            <img src="cyano-3.jpg">
-            <img src="cyano-2.jpg">
-        </div>
-        <div class="photoset-2">
-            <img src="cyano-5.jpg">
-            <img src="cyano-4.jpg">
-        </div>
-        <div class="photoset-1" style="margin-bottom:60px;">
-            <img src="cyano-1.jpg">
-        </div>
+        <p style="margin-bottom:140px;">Self evident to the title, an entirely accurate reflection of the creator.</p>
     </div>
+
+    <div style="text-align: center;">
+        <h1>Meditation Model: Gladys</h1>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/SG0r6sugygE"></iframe>
+        </div>
+        <p>Lux-Layer brings you a brand new automated guided meditation to help you reduce stress and boost productivity.</p>
+        <p style="margin-bottom:140px;">The three year subscription plan is 30% off with the promo code RELAX.</p>
+    </div>
+
     <div id="footer">
         <ul>
             <li>Fox Ueng-McHale</li>
